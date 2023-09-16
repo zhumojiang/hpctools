@@ -5,19 +5,11 @@
         git clone https://gitlab.citic.udc.es/emilio.padron/hpctools.git
 
     + That will create an hpctools subdirectory in your system
-    + This will be your local repository for the three HPCTools' tasks
-    + At this point, you should have these 4 files in your local repository:
+    + This will be your local repository for this task
+    + At this point, you should have these 8 files in your local repository:
 
             $ ls
-            dgesv.c  makefile  README.md  task1.txt
-
-    - If you have less files you have probably cloned the repo before
-      more recent commits with makefile and/or README.md were included.
-
-    Just update your local repo with:
-    (assuming origin remote repo gitlab.citic.udc.es/emilio.padron/hpctools.git)}
-
-            git pull origin main
+            dgesv.c  dgesv.h  main.c  makefile  README.md  task1.txt  timer.c  timer.h
 
 2. Create your own remote remote repository
 
