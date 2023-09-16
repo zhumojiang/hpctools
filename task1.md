@@ -28,12 +28,14 @@ Finisterrae III (FT3): just run 'make' to build the binary.
 
 The make recipe uses GCC as compiler and the Lapacke in Openblas as
 baseline routine. This is determined by:
+
     #include <openblas/lapacke.h> -> in main.c
     LDLIBS=-lopenblas -> in makefile
 
 You can compile using Intel's compiler and math lib (MKL) with
 'make CC=icx' and commenting out the previous lines and uncommenting
 these others:
+
     #include <mkl_lapacke.h> -> in main.c
     LDLIBS=-qmkl=sequential -lmkl_intel_lp64 -> in makefile
 
@@ -42,5 +44,6 @@ these others:
 
 In other systems, different recipes can be needed. For example, I use
 this in my Debian boxes with GCC:
+
     #include <lapacke.h> -> in main.c
     LDLIBS=-llapacke -> in makefile
