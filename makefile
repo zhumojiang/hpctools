@@ -1,8 +1,15 @@
-# Module needed: openblas
-# => module load openblas
-# You need to uncomment the header for openblas
+# Default Lapacke: Openblas at CESGA
+LDLIBS=-lopenblas
 
-LDLIBS=-llapacke
+# Other systems (my Debian boxes, for example)
+#LDLIBS=-llapacke
+
+# Intel MKL at CESGA
+# Module needed: imkl
+# => module load openblas
+# LDLIBS for intel compiler: icx (module needed: intel)
+# Just invoke make like this: make CC=icx
+#LDLIBS=-qmkl=sequential -lmkl_intel_lp64
 
 dgesv: dgesv.o timer.o main.o
 

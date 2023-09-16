@@ -1,7 +1,8 @@
-#include <lapacke.h>
+//#include <lapacke.h>
 //#include <openblas/lapacke.h>
-//#include <mkl_lapacke.h>
+#include <mkl_lapacke.h>
 #include <stdio.h>
+#include <stdlib.h>
 #include <math.h>
 #include <string.h>
 #include <unistd.h>
@@ -53,7 +54,7 @@ unsigned int check_result(double *bref, double *b, unsigned int size)
 int main(int argc, char *argv[])
 {
   if (argc < 2) {
-    printf("You need to provide a matrix size\n");
+    printf("You need to provide a matrix size (e.g. 1024 for use 1024x1024 matrices)\n");
 
     return 1;
   }
