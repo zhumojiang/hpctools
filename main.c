@@ -1,6 +1,6 @@
 //#include <lapacke.h>
-//#include <openblas/lapacke.h>
-#include <mkl_lapacke.h>
+#include <openblas/lapacke.h>
+//#include <mkl_lapacke.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
