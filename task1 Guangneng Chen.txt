@@ -1,0 +1,17 @@
+[curso349@login211-1 hpctools-main]$ ls
+dgesv  dgesv.c  dgesv.h  dgesv.o  main.c  main.o  makefile  README.md  task1.md  test  test.c  test.o  timer.c  timer.h  timer.o
+[curso349@login211-1 hpctools-main]$ make
+gcc    -c -o dgesv.o dgesv.c
+gcc -o dgesv dgesv.o timer.o main.o -lopenblas
+gcc    -c -o test.o test.c
+gcc -o test dgesv.o timer.o test.o -lopenblas
+[curso349@login211-1 hpctools-main]$ ls
+dgesv  dgesv.c  dgesv.h  dgesv.o  main.c  main.o  makefile  README.md  task1.md  test  test.c  test.o  timer.c  timer.h  timer.o
+[curso349@login211-1 hpctools-main]$ ./dgesv 14
+Time taken by Lapacke dgesv: 0 ms
+Time taken by my dgesv solver: 0 ms
+Result is wrong!
+[curso349@login211-1 hpctools-main]$ ./test
+x[0] = -0.500000 (Expected: -0.500000)
+x[1] = 1.687500 (Expected: 1.687500)
+x[2] = 0.062500 (Expected: 0.062500)
