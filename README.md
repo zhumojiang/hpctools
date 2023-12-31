@@ -1,89 +1,135 @@
-Task: Use Valgrind Memcheck to check your serial implementation and identify possible memory issues. What problems did you discover? What are they specifically? Resolve these issues and obtain a clean Valgrind run.
+Task: Basic benchmarking of your dgesv implementation (Task #1, after possible modifications introduced in step #0)
+-> benchmark both with gcc and icx
+-> run multiple versions of your code, compiled using different optimization options/levels
 
-During the first run of "make memcheck," multiple memory leaks were detected in the code in main.c. The specific problems are as follows:
 
-1. In the "generate_matrix" function:
-   - This function uses "malloc" to allocate memory for creating a matrix, but there is no corresponding "free" call in the main function to release this memory.
+Makefile code
+# Default Lapacke: Openblas at CESGA
+LDLIBS=-lopenblas
 
-2. In the "duplicate_matrix" function:
-   - Similarly, this function allocates memory for copying a matrix, but the code lacks the necessary memory release in the main function.
+# DebianLapacke
+#LDLIBS=-llapacke
 
-To resolve these memory leaks, the allocated memory for these matrices needs to be freed when they are no longer needed. Add "free" function calls at the end of the main function to release the memory.
+# Intel MKL at CESGA
+# Module needed: imkl
+# => module load openblas
+# LDLIBS for intel compiler: icx (module needed: intel)
+# Just invoke make like this: make CC=icx
+#LDLIBS=-qmkl=sequential -lmkl_intel_lp64
 
-During the second run of "make memcheck," the following two issues were detected:
+TARGETS=dgesv test
 
-1. Execution time:
-   - "Time taken by Lapacke dgesv: 148806 ms": Using the LAPACKE library's "dgesv" function to solve a linear equation system took approximately 148.8 seconds.
-   - "Time taken by my dgesv solver: 75402 ms": The "dgesv" solver solving the same linear equation system took approximately 75.4 seconds.
+CC=gcc
+#icx编译所有目标：make all CC=icx
 
-2. Result correctness:
-   - "Result is wrong!"
 
-No memory leaks were detected in the program. However, the solver's calculation result is inconsistent with the result from the LAPACKE library, indicating a need to check and correct the algorithm.
+# 编译器优化选项
+OPT_CFLAGS=-g -Wall
+ifeq ($(OPT_LEVEL),)
+	OPT_LEVEL=-O1 # 默认优化级别1
+endif
+OPT_CFLAGS+=$(OPT_LEVEL)
 
-The modified dgesv algorithm is as follows:
+# 自动向量化选项，可以在需要时启用
+# VECTORIZE_FLAGS=-ftree-vectorize -march=native
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
 
-// Function declaration
-double* copy_matrix(int n, double* a);
+# OpenMP并行化
+LDFLAGS=-fopenmp
 
-int my_dgesv(int n, int nrhs, double* a, double* b) {
-    int i, j, k;
+SRCS=dgesv.c timer.c main.c test.c
 
-    // Create a copy of a to avoid modifying the original matrix
-    double* a_copy = copy_matrix(n, a);
-    if (!a_copy) {
-        return -1; // Memory allocation failed
-    }
+OBJS=$(SRCS:.c=.o)
 
-    // Perform Gaussian elimination
-    for (k = 0; k < n - 1; k++) {
-        if (fabs(a_copy[k * n + k]) < 1e-10) {
-            free(a_copy); // Release memory
-            return -1; // Singular matrix
-        }
-        for (i = k + 1; i < n; i++) {
-            double factor = -a_copy[i * n + k] / a_copy[k * n + k];
-            for (j = k; j < n; j++) {
-                a_copy[i * n + j] += factor * a_copy[k * n + j];
-            }
-            for (j = 0; j < nrhs; j++) {
-                b[i * nrhs + j] += factor * b[k * nrhs + j];
-            }
-        }
-    }
+.PHONY: all clean memcheck advisor vtune
 
-    // Back-substitution to solve for x
-    for (i = n - 1; i >= 0; i--) {
-        for (j = 0; j < nrhs; j++) {
-            double sum = b[i * nrhs + j];
-            for (k = i + 1; k < n; k++) {
-                sum -= a_copy[i * n + k] * b[k * nrhs + j];
-            }
-            if (fabs(a_copy[i * n + i]) < 1e-10) {
-                free(a_copy); // Release memory
-                return -1; // Singular matrix
-            }
-            b[i * nrhs + j] = sum / a_copy[i * n + i];
-        }
-    }
+all: $(TARGETS)
 
-    free(a_copy); // Release copy memory
-    return 0;
-}
+dgesv: dgesv.o timer.o main.o
+	$(CC) -g -Wall -o $@ $^ $(LDLIBS)
 
-// Create and return a copy of the matrix
-double* copy_matrix(int n, double* a) {
-    double* copy = malloc(n * n * sizeof(double));
-    if (copy) {
-        for (int i = 0; i < n * n; i++) {
-            copy[i] = a[i];
-        }
-    }
-    return copy;
-}
+.PHONY: gprof-analysis
 
-During the third run of "make memcheck," a clean result is obtained.
+gprof-analysis:
+	for cc in gcc icx; do \
+		for opt in O0 O1 O2 O3; do \
+			$(MAKE) dgesv-opt CC=$$cc OPT_LEVEL=-$$opt; \
+			./dgesv-opt 300; \
+			gprof dgesv-opt gmon.out > analysis-$$cc-$$opt.txt; \
+		done \
+	done
+
+test: dgesv.o timer.o test.o
+	$(CC) -g -Wall -o $@ $^ $(LDLIBS)
+memcheck:dgesv 
+	valgrind --leak-check=full --track-origins=yes ./dgesv 1024
+
+dgesv-opt: dgesv.o timer.o main.o
+	$(CC) $(OPT_CFLAGS) -pg -o $@ $^ $(LDLIBS) 
+test-opt: dgesv.o timer.o test.o
+	$(CC) $(OPT_CFLAGS) -o $@ $^ $(LDLIBS)
+
+advisor: dgesv-opt
+	advixe-cl --collect survey --project-dir=./advisor -./dgesv-opt 1024
+
+vtune: dgesv-opt
+	vtune -collect hotspots -./dgesv-opt 1024
+
+clean:
+	$(RM) $(TARGETS) *.o *~ dgesv-opt test-opt
+
+
+Code Analysis
+1. Compiler optimization options
+OPT_CFLAGS=-g -Wall
+ifeq ($(OPT_LEVEL),)
+	OPT_LEVEL=-O1 # Default optimization level 1
+endif
+OPT_CFLAGS+=$(OPT_LEVEL)
+
+
+2. Gprof performance analysis
+.PHONY: gprof-analysis
+
+gprof-analysis:
+    for cc in gcc icx; do \
+        for opt in O0 O1 O2 O3; do \
+            $(MAKE) dgesv-opt CC=$$cc OPT_LEVEL=-$$opt; \
+            ./dgesv-opt 300; \
+            gprof dgesv-opt gmon.out > analysis-$$cc-$$opt.txt; \
+        done \
+    done
+
+This is a phony target used for performance analysis of the `dgesv-opt` program.
+The script loops through both `gcc` and `icx` compilers and different optimization levels (`-O0` to `-O3`), compiles and runs the `dgesv-opt` program, and performs performance analysis using the `gprof` tool, saving the analysis results in the corresponding text files.
+
+
+3. Compilation of `dgesv-opt` (optimized version)
+dgesv-opt: dgesv.o timer.o main.o
+    $(CC) $(OPT_CFLAGS) -pg -o $@ $^ $(LDLIBS)
+
+This is a rule for compiling the `dgesv-opt` program. It uses the `$(OPT_CFLAGS)` flag, which includes optimizations and debug information.
+`-pg` is necessary for `gprof` analysis and inserts specific profiling code during compilation.
+
+
+Here is the performance analysis report for the `dgesv-opt` program:
+
+Compilation environment:
+Compiler: `icx`/`gcc`
+Optimization level: `-O1`, `-O2`, `-O3`
+Analysis tool: `gprof`
+
+Summary:
+The `my_dgesv` function accounts for the majority of the total runtime of the program (100.13%). This indicates that almost all computational resources are consumed by the `my_dgesv` function.
+The cumulative runtime is 0.10 seconds, and the independent runtime of the `my_dgesv` function is also 0.10 seconds.
+Since the number of function calls is not provided, the average call time of `my_dgesv` cannot be determined.
+
+Analysis Conclusion:
+1. Performance bottleneck: From the results, the `my_dgesv` function is a clear performance bottleneck. Optimizing this function may significantly improve the overall performance of the program.
+
+2. Optimization suggestions:
+   Code optimization: Perform a detailed analysis of the `my_dgesv` function internals to identify computationally intensive sections that can be optimized, such as loop structures, conditional statements, and algorithm efficiency.
+   Algorithm improvement: Consider if there are more efficient algorithms available to achieve the functionality of `my_dgesv`.
+   Parallel computation: If there are parallelizable computations within `my_dgesv`, consider using multi-threading or vectorization techniques.
+
+3. Using other performance analysis tools: To obtain more detailed performance analysis, it is recommended to use other tools such as `perf` or `VTune`, especially in multi-core and multi-threaded environments.
