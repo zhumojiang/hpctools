@@ -1,0 +1,15 @@
+-r
+/home/ulc/cursos/curso349/hpctools/advisor/111/e000/trc000
+--return-app-exitcode
+--cs-mode=count-loops,count-flops,stl-profiling,stack-stitching
+--count-flops
+--benchmarks=dram,mcdram,cpu_cache,flop_peak,int
+--cs-file=/home/ulc/cursos/curso349/hpctools/advisor/111/e000/callstacks.def
+--jit-profiling
+--gpu-carm
+--target-gpu=none
+--app-working-dir=/home/ulc/cursos/curso349/hpctools
+--
+/home/ulc/cursos/curso349/hpctools/dgesv
+./dgesv
+50000
