@@ -2,36 +2,11 @@
 #include <stdlib.h>
 #include <math.h>
 
-
 int my_dgesv(int n, int nrhs, double *a, double *b) {
-    int i, j, k, maxIndex;
-    double maxVal, tmp;
+    int i, j, k;
 
-   
+    
     for (k = 0; k < n - 1; k++) {
-        
-        maxIndex = k;
-        maxVal = fabs(a[k * n + k]);
-        for (i = k + 1; i < n; i++) {
-            if (fabs(a[i * n + k]) > maxVal) {
-                maxVal = fabs(a[i * n + k]);
-                maxIndex = i;
-            }
-        }
-        if (maxIndex != k) {
-           
-            for (j = 0; j < n; j++) {
-                tmp = a[k * n + j];
-                a[k * n + j] = a[maxIndex * n + j];
-                a[maxIndex * n + j] = tmp;
-            }
-            for (j = 0; j < nrhs; j++) {
-                tmp = b[k * nrhs + j];
-                b[k * nrhs + j] = b[maxIndex * nrhs + j];
-                b[maxIndex * nrhs + j] = tmp;
-            }
-        }
-
         if (fabs(a[k * n + k]) < 1e-10) {
             
             return -1; 
@@ -45,6 +20,7 @@ int my_dgesv(int n, int nrhs, double *a, double *b) {
         }
     }
 
+    
     for (j = 0; j < nrhs; j++) { 
         for (i = n - 1; i >= 0; i--) {
             double t = b[i * nrhs + j];
