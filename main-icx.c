@@ -32,9 +32,9 @@ double *duplicate_matrix(double *orig, unsigned int size)
 
 int is_nearly_equal(double x, double y)
 {
-  const double epsilon = 1e-5 /* some small number */;
+  const double epsilon = 1e-5 ;
   return fabs(x - y) <= epsilon * fabs(x);
-  // see Knuth section 4.2.2 pages 217-218
+ 
 }
 
 unsigned int check_result(double *bref, double *b, unsigned int size, unsigned int nrhs)
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
   else
     printf("Result is wrong!\n");
 
-  // 释放动态分配的内存
+
   free(a);
   free(b);
   free(aref);

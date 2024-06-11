@@ -1,0 +1,85 @@
+# callstacks file version: 8
+#    rowid	    parent	       rva	 loop	 system	                                function	binary	instance_start_rva	instance_size	instance_end_rva	finst_rowid	roi	is_inlined	jit_method_id	tripcounts_roi	flops_roi	cachesim_roi	data_transfer_roi	projection_roi
+         1	        -1	      4864	    0	      0	                                  _start	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4864	43	0	2	0	0	0	0	0	0	0	0
+         2	        -1	      4905	    0	      0	                                  _start	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4864	43	0	2	0	0	0	0	0	0	0	0
+         3	        81	    146633	    1	      0	     [Loop@0x23c41 in __libc_start_main]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	146497	223	146720	3	0	0	0	0	0	0	0	0
+         4	         3	      4425	    0	      0	                                    main	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4336	513	0	5	0	0	0	0	0	0	0	0
+         5	        65	      8084	    1	      0	    [Loop at line 17 in generate_matrix]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8080	54	8134	6	0	0	0	0	0	0	0	0
+         6	         5	    247736	    0	      0	                                    rand	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	247728	14	0	10	0	0	0	0	0	0	0	0
+         7	         6	    246537	    0	      0	                                  random	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	246464	191	0	11	0	0	0	0	0	0	0	0
+         8	         3	      4438	    0	      0	                                    main	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4336	513	0	5	0	0	0	0	0	0	0	0
+         9	        67	      8188	    0	      0	                                  memcpy	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8181	8	0	8	0	1	0	0	0	0	0	0
+        10	         9	   1420223	    0	      0	                           func@0x15aae0	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	1420000	1136	0	20	0	0	0	0	0	0	0	0
+        11	         3	      4515	    0	      0	                                    main	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4336	513	0	5	0	0	0	0	0	0	0	0
+        12	        11	  11358509	    0	      0	                      LAPACKE_dgesv_work	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	11358192	761	0	21	0	0	0	0	0	0	0	0
+        13	        38	  12133620	    1	      0	    [Loop@0xb924f0 in LAPACKE_dge_trans]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133616	21	12133637	22	0	0	0	0	0	0	0	0
+        14	        11	         0	    0	      0	                [Unknown stack frame(s)]	n/a	0	0	0	1	0	0	0	0	0	0	0	0
+        15	        40	   3206991	    1	      0	         [Loop@0x30eee0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3206880	737	3207617	25	0	0	0	0	0	0	0	0
+        16	        44	   3191922	    1	      0	         [Loop@0x30b120 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3191072	965	3192037	27	0	0	0	0	0	0	0	0
+        17	        11	  11358550	    0	      0	                      LAPACKE_dgesv_work	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	11358192	761	0	21	0	0	0	0	0	0	0	0
+        18	        17	    665550	    0	      0	                                  dgesv_	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	665024	616	0	30	0	0	0	0	0	0	0	0
+        19	        46	   4104278	    1	      0	        [Loop@0x3ea000 in dgetrf_single]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4104192	226	4104418	31	0	0	0	0	0	0	0	0
+        20	        48	   4104278	    1	      0	        [Loop@0x3ea000 in dgetrf_single]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4104192	226	4104418	31	0	0	0	0	0	0	0	0
+        21	        50	   4116307	    1	      0	             [Loop@0x3ecd78 in dgetf2_k]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4116064	334	4116428	33	0	0	0	0	0	0	0	0
+        22	        52	   3176657	    1	      0	              [Loop@0x307880 in dswap_k]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3176576	201	3176777	35	0	0	0	0	0	0	0	0
+        23	        44	   3191480	    1	      0	         [Loop@0x30b120 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3191072	965	3192037	27	0	0	0	0	0	0	0	0
+        24	        44	   3191891	    1	      0	         [Loop@0x30b120 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3191072	965	3192037	27	0	0	0	0	0	0	0	0
+        25	        44	   3191927	    1	      0	         [Loop@0x30b120 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3191072	965	3192037	27	0	0	0	0	0	0	0	0
+        26	        58	   3199578	    1	      0	         [Loop@0x30d0a0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3199136	965	3200101	37	0	0	0	0	0	0	0	0
+        27	        57	   3200350	    1	      0	         [Loop@0x30cca0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3198112	4723	3202835	38	0	0	0	0	0	0	0	0
+        28	        58	   3199700	    1	      0	         [Loop@0x30d0a0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3199136	965	3200101	37	0	0	0	0	0	0	0	0
+        29	        11	  11358602	    0	      0	                      LAPACKE_dgesv_work	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	11358192	761	0	21	0	0	0	0	0	0	0	0
+        30	        63	  12133620	    1	      0	    [Loop@0xb924f0 in LAPACKE_dge_trans]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133616	21	12133637	22	0	0	0	0	0	0	0	0
+        31	         3	      4597	    0	      0	                                    main	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	4336	513	0	5	0	0	0	0	0	0	0	0
+        32	        71	      6126	    1	      0	           [Loop at line 43 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6112	30	6142	12	0	0	0	0	0	0	0	0
+        33	        73	      5774	    1	      0	           [Loop at line 41 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5760	30	5790	16	0	0	0	0	0	0	0	0
+        34	        71	      6133	    1	      0	           [Loop at line 43 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6112	30	6142	12	0	0	0	0	0	0	0	0
+        35	        78	      6941	    1	      0	           [Loop at line 51 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6928	21	6949	17	0	0	0	0	0	0	0	0
+        36	        78	      6936	    1	      0	           [Loop at line 51 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6928	21	6949	17	0	0	0	0	0	0	0	0
+        37	        12	  12133600	    0	      0	                       LAPACKE_dge_trans	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133504	153	0	23	0	0	0	0	0	0	0	0
+        38	        37	  12133616	    1	      0	    [Loop@0xb924e0 in LAPACKE_dge_trans]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133600	52	12133652	24	0	0	0	0	0	0	0	0
+        39	        12	  12133620	    0	      0	                       LAPACKE_dge_trans	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133504	153	0	23	0	0	0	0	0	0	0	0
+        40	        14	   3206880	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        41	        14	   3206991	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        42	        14	   3189920	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        43	        42	   3190032	    1	      0	         [Loop@0x30aca0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189920	16137	3206057	29	0	0	0	0	0	0	0	0
+        44	        43	   3191072	    1	      0	         [Loop@0x30ad10 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3190032	4741	3194773	28	0	0	0	0	0	0	0	0
+        45	        14	   3191922	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        46	        18	   4104192	    0	      0	                           dgetrf_single	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4103696	1729	0	32	0	0	0	0	0	0	0	0
+        47	        18	   4104278	    0	      0	                           dgetrf_single	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4103696	1729	0	32	0	0	0	0	0	0	0	0
+        48	        19	   4104192	    0	      0	                           dgetrf_single	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4103696	1729	0	32	0	0	0	0	0	0	0	0
+        49	        19	   4104278	    0	      0	                           dgetrf_single	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4103696	1729	0	32	0	0	0	0	0	0	0	0
+        50	        20	   4115832	    0	      0	                                dgetf2_k	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4115600	850	0	34	0	0	0	0	0	0	0	0
+        51	        20	   4116307	    0	      0	                                dgetf2_k	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	4115600	850	0	34	0	0	0	0	0	0	0	0
+        52	        21	   3176576	    0	      0	                                 dswap_k	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3175424	1412	0	36	0	0	0	0	0	0	0	0
+        53	        21	   3176657	    0	      0	                                 dswap_k	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3175424	1412	0	36	0	0	0	0	0	0	0	0
+        54	        14	   3191480	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        55	        14	   3191891	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        56	        14	   3191927	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        57	        42	   3198112	    1	      0	         [Loop@0x30aca0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189920	16137	3206057	29	0	0	0	0	0	0	0	0
+        58	        57	   3199136	    1	      0	         [Loop@0x30cca0 in dgemm_kernel]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3198112	4723	3202835	38	0	0	0	0	0	0	0	0
+        59	        14	   3199578	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        60	        14	   3200350	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        61	        14	   3199700	    0	      0	                            dgemm_kernel	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	3189760	28076	0	26	0	0	0	0	0	0	0	0
+        62	        29	  12133600	    0	      0	                       LAPACKE_dge_trans	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133504	153	0	23	0	0	0	0	0	0	0	0
+        63	        62	  12133616	    1	      0	    [Loop@0xb924e0 in LAPACKE_dge_trans]	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133600	52	12133652	24	0	0	0	0	0	0	0	0
+        64	        29	  12133620	    0	      0	                       LAPACKE_dge_trans	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/lib64/libopenblas.so.0	12133504	153	0	23	0	0	0	0	0	0	0	0
+        65	         4	      8080	    0	      0	                         generate_matrix	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8032	110	0	7	0	0	0	0	0	0	0	0
+        66	         4	      8084	    0	      0	                         generate_matrix	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8032	110	0	7	0	0	0	0	0	0	0	0
+        67	         8	      8174	    0	      0	                        duplicate_matrix	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8144	52	0	9	0	0	0	0	0	0	0	0
+        68	         8	      8188	    0	      0	                        duplicate_matrix	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	8144	52	0	9	0	0	0	0	0	0	0	0
+        69	        31	      5392	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        70	        69	      5680	    1	      0	           [Loop at line 11 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5472	937	7852,6619,7852	15	0	0	0	0	0	0	0	0
+        71	        70	      6112	    1	      0	           [Loop at line 39 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5680	729	6528	14	0	0	0	0	0	0	0	0
+        72	        31	      6126	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        73	        70	      5760	    1	      0	           [Loop at line 39 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5680	729	6528	14	0	0	0	0	0	0	0	0
+        74	        31	      5774	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        75	        31	      6133	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        76	        31	      6810	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        77	        76	      6864	    1	      0	           [Loop at line 48 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6810	225	7855,7035	19	0	0	0	0	0	0	0	0
+        78	        77	      6928	    1	      0	           [Loop at line 49 in my_dgesv]	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	6864	150	7855,7014	18	0	0	0	0	0	0	0	0
+        79	        31	      6941	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        80	        31	      6936	    0	      0	                                my_dgesv	/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/dgesv	5104	2926	0	13	0	0	0	0	0	0	0	0
+        81	         2	    146497	    0	      0	                       __libc_start_main	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	146400	476	0	4	0	0	0	0	0	0	0	0
+        82	         2	    146633	    0	      0	                       __libc_start_main	/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/lib64/libc.so.6	146400	476	0	4	0	0	0	0	0	0	0	0
+        83	        -1	         0	    0	      0	                      [Outside any loop]	n/a	0	0	0	39	0	0	0	0	0	0	0	0

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- <!DOCTYPE IntelParallelAdvisorSummaryCollection SYSTEM  "IntelParallelAdvisorSummaryCollection.dtd"> -->
+
+<IntelParallelAdvisorSummary version="" 
+                             kind="DATAKIND_SURVEY_EX" >
+  <hotspot filename=""
+           line_no="4294967295"
+           routine="__libc_start_main"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="2.350000E+00"
+           trip_counts=""
+           func_instance="3"
+           priority="0"/>
+  <hotspot filename="/home/ulc/cursos/curso349/hpctools/dgesv.c"
+           line_no="48"
+           routine="my_dgesv"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.889999E+00"
+           trip_counts=""
+           func_instance="19"
+           priority="0"/>
+  <hotspot filename="/home/ulc/cursos/curso349/hpctools/dgesv.c"
+           line_no="51"
+           routine="my_dgesv"
+           is_vectorized="0"
+           self_time="1.889999E+00"
+           total_time="1.889999E+00"
+           trip_counts=""
+           func_instance="17"
+           priority="0"/>
+  <hotspot filename="/home/ulc/cursos/curso349/hpctools/dgesv.c"
+           line_no="49"
+           routine="my_dgesv"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="1.889999E+00"
+           trip_counts=""
+           func_instance="18"
+           priority="0"/>
+  <hotspot filename="/home/ulc/cursos/curso349/hpctools/dgesv.c"
+           line_no="11"
+           routine="my_dgesv"
+           is_vectorized="0"
+           self_time="0.000000E+00"
+           total_time="3.299940E-01"
+           trip_counts=""
+           func_instance="15"
+           priority="0"/>
+</IntelParallelAdvisorSummary >

@@ -1,0 +1,103 @@
+14 [140278823892864] INFO perfrun.launcher <> - Launcher main begin
+19 [140278823892864] INFO perfrun.launcher <> - MessageCatalogInit finished
+19 [140278823892864] INFO perfrun.launcher <> - Launcher instance created
+19 [140278823892864] INFO perfrun.launcher <> - argc = 7; cmdline = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/bin64/advixe-runss --ui-output-format xml --ui-output-fd 72 --option-file /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/config/runss.options 
+91 [140278823892864] INFO perfrun.launcher <> - create msngr2::ICliToolContext
+92 [140278823892864] INFO perfrun.launcher <> - create file finder object
+92 [140278823892864] INFO perfrun.launcher <> - create a result directory: pattern = /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000 pid = 4294967295
+96 [140278823892864] INFO perfrun.sdk <> - checked that the directory /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000 is a local directory
+97 [140278823892864] INFO perfrun.sdk <> - the directory /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000 is located on a share or its FS ID is unknown 26985
+97 [140278823892864] INFO perfrun.sdk <> - checked that the directory /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso349/desktop.Q7Ad6lsM/advixe-tmp-curso349 is a local directory
+97 [140278823892864] INFO perfrun.sdk <> - the directory /mnt/lustre/scratch/nlsas/home/ulc/cursos/curso349/desktop.Q7Ad6lsM/advixe-tmp-curso349 is located on a share or its FS ID is unknown 198183888
+98 [140278823892864] INFO perfrun.launcher <> - create data directory = /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0
+100 [140278823892864] INFO perfrun.launcher <> - Creating the master collection flag
+104 [140278823892864] INFO perfrun.launcher <> - Done creating the master collection flag
+108 [140278691620608] INFO perfrun.launcher <> - plugin [remoteplug] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.sdk <> - Allocating TMU :/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0/systemcollector-1409961-c206-16.sc
+109 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.launcher <> - plugin [gpu] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+109 [140278691620608] INFO perfrun.mrte <> - system-wide mode is 0
+109 [140278691620608] INFO perfrun.mrte <> - Getting  mrte profiling environment ...
+164 [140278691620608] INFO perfrun.mrte <> - INTEL_MRTE_DATA_DIR=/mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0
+164 [140278691620608] INFO perfrun.mrte <> - INTEL_MRTE_HOST_NAME=c206-16
+164 [140278691620608] INFO perfrun.mrte <> - Data directory: /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0
+164 [140278691620608] INFO perfrun.mrte <> - Mrte plugin is initialized
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.tpss <> - initialize tpss controller
+164 [140278691620608] INFO perfrun.tpss <> - configure collection mode: value = cpu:stack
+164 [140278691620608] INFO perfrun.tpss <> - default obj-size-min=1024
+164 [140278691620608] INFO perfrun.tpss <> - default hash-table-size=0
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278691620608] INFO perfrun.launcher <> - plugin [] was disabled because it doesn't support the given collection type.
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: LD_LIBRARY_PATH = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib32/runtime:/mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64/runtime:/opt/cesga/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64:/opt/cesga/2020/software/Core/intel/2021.3.0/tbb/2021.3.0/lib/intel64/gcc4.8:/opt/cesga/2020/software/Core/intel/2021.3.0/compiler/2021.3.0/linux/lib/emu:/opt/cesga/2020/software/Core/intel/2021.3.0/compiler/2021.3.0/linux/lib/x64:/opt/cesga/2020/software/Core/intel/2021.3.0/compiler/2021.3.0/linux/compiler/lib/intel64_lin:/opt/cesga/2020/software/Core/intel/2021.3.0/compiler/2021.3.0/linux/lib:/mnt/netapp1/Optcesga_FT2_RHEL7/2020/gentoo/22072020/usr/gr/lib64
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY32 = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_LIBITTNOTIFY64 = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_ITTNOTIFY_GROUPS = 
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER32 = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_JIT_PROFILER64 = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: VS_PROFILER = libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: OMP_TOOL_LIBRARIES = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib32/runtime/libittnotify_collector.so:/mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64/runtime/libittnotify_collector.so
+164 [140278823892864] INFO perfrun.launcher <> - set environment variable: ENABLE_JITPROFILING = 1
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: CL_CONFIG_USE_VTUNE = True
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES = 0
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: KMP_FORKJOIN_FRAMES_MODE = 0
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: OMP_TOOL = disabled
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_DATA_DIR = /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0
+165 [140278823892864] INFO perfrun.launcher <> - set environment variable: INTEL_MRTE_HOST_NAME = c206-16
+165 [140278823892864] INFO perfrun.launcher <> - RpcServer: run RPC server to handle requests
+167 [140278823892864] INFO perfrun.launcher <> - Launcher: command line to start before modification = /home/ulc/cursos/curso349/hpctools/dgesv 1024
+167 [140278823892864] INFO perfrun.launcher <> - Launcher: command line to start after modification = /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/bin64/pin -error_file /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0/pinerr.tpsslog -detach_reattach -follow_execv -tool_load_option deepbind -t64 /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib64/libtpsstool.so -t /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/lib32/libtpsstool.so -server_name tpss_ipc.1409961 -prd_dir /mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0 -- /home/ulc/cursos/curso349/hpctools/dgesv 1024
+167 [140278823892864] INFO perfrun.launcher <> - ProcessCreator object was created
+168 [140278823892864] INFO perfrun.launcher <> - Launcher: the process was started in suspend mode
+172 [140278691620608] WARN perfrun.system <> - Could not do anything with /sys/kernel/debug/kvm: boost::filesystem::status: Permission denied: "/sys/kernel/debug/kvm", at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:797
+173 [140278691620608] WARN perfrun.system <> - Folder "/var/run/libvirt/qemu/"doesn't exist, at file: vcs/perfrun1/plugins/system/src/trace_writer.cpp:810
+177 [140278691620608] WARN perfrun.system <> - SEP tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:564
+177 [140278691620608] WARN perfrun.system <> - SEP driver is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:720
+177 [140278691620608] WARN perfrun.system <> - amplxe-perf tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:580
+177 [140278691620608] WARN perfrun.system <> - Device mapping through perf is not available on current kernel, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:918
+180 [140278691620608] WARN perfrun.system <> - SEP tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:564
+180 [140278691620608] WARN perfrun.system <> - SEP driver is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:720
+180 [140278691620608] WARN perfrun.system <> - SEP tool is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:564
+180 [140278691620608] WARN perfrun.system <> - SEP driver is not available, at file: vcs/perfrun1/plugins/system/src/device_mapper.cpp:720
+180 [140278691620608] WARN perfrun.sdk <> - Failed to find xl binary on any of the system paths: /bin, /sbin, /usr/bin, /usr/sbin., at file: vcs/perfrun1/sdk/src/utils.cpp:197
+183 [140278691620608] INFO perfrun.vdso <> - Helper runtool '/mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/bin32/advixe-runss -dump-vdso -r /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000 --tmp-dir /mnt/lustre/scratch/nlsas//home/ulc/cursos/curso349/desktop.Q7Ad6lsM/advixe-tmp-curso349' returned 1
+305 [140278691620608] INFO perfrun.vdso <> - Helper runtool '/mnt/netapp1/Optcesga_FT2_RHEL7/2020/software/Core/advisor/2021.4.0/advisor/2021.4.0/bin64/advixe-runss -dump-vdso -r /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000 --tmp-dir /mnt/lustre/scratch/nlsas//home/ulc/cursos/curso349/desktop.Q7Ad6lsM/advixe-tmp-curso349' returned 0
+305 [140278691620608] INFO perfrun.itt <> - start itt controller for pid #1409975
+305 [140278691620608] INFO perfrun.tpss <> - start tpss controller for pid #1409975
+357 [140278823892864] INFO perfrun.launcher <> - Launcher: all plugins were started
+357 [140278823892864] INFO perfrun.launcher <> - DirectoryMonitor object was created
+357 [140278823892864] INFO perfrun.launcher <> - DirectoryMonitor: a callback was added
+357 [140278823892864] INFO perfrun.launcher <> - DirectoryMonitor was started with pingTime = 1000
+357 [140278823892864] INFO perfrun.launcher <> - DeadlineTimer is going to be constructed
+357 [140278823892864] INFO perfrun.launcher <> - DeadlineTimer: a callback was added
+362 [140278823892864] INFO perfrun.launcher <> - Launcher: resume the profiled application and  wait its termination or stop command
+2856 [140278823892864] INFO perfrun.launcher <> - Launcher: the profiled application was terminated  with exit code = 0
+2868 [140278691620608] INFO perfrun.itt <> - stop itt controller
+2868 [140278691620608] INFO perfrun.itt <> - detach itt controller
+2868 [140278691620608] INFO perfrun.tpss <> - stop tpss controller
+2873 [140278691620608] INFO perfrun.sdk <> - De-allocating TMU: /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0/systemcollector-1409961-c206-16.sc
+2873 [140278691620608] INFO perfrun.system <> - closed the system trace file: /mnt/netapp2/Home_FT2/home/ulc/cursos/curso349/hpctools/advisor/v3/v3/e000/hs000/data.0/systemcollector-1409961-c206-16.sc
+2873 [140278823892864] INFO perfrun.launcher <> - Launcher: all plugins were stopped.
+2873 [140278823892864] INFO perfrun.launcher <> - DeadlineTimer is going to be destroyed
+2873 [140278823892864] INFO perfrun.launcher <> - DeadlineTimer was destroyed
+2873 [140278823892864] INFO perfrun.launcher <> - DirectoryMonitor object was destroyed
+2873 [140278823892864] WARN perfrun.launcher <> - Stop command is ignored because it is received when collection is already stopped, at file: vcs/perfrun1/launcher/src/command_handler.cpp:212
+2876 [140278823892864] INFO perfrun.launcher <> - Application exit code: 0
+2876 [140278823892864] INFO perfrun.launcher <> - Exit code: 0

@@ -1,0 +1,163 @@
+Global optimization report for : generate_matrix
+
+LOOP BEGIN at main.c (17, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 8
+LOOP END
+
+LOOP BEGIN at main.c (17, 3)
+<Remainder loop>
+LOOP END
+=================================================================
+
+Global optimization report for : duplicate_matrix
+=================================================================
+
+Global optimization report for : is_nearly_equal
+=================================================================
+
+Global optimization report for : check_result
+
+LOOP BEGIN at main.c (44, 3)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    remark #25439: Loop unrolled with remainder by 2
+LOOP END
+=================================================================
+
+Global optimization report for : main
+
+LOOP BEGIN at main.c (17, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 8
+LOOP END
+
+LOOP BEGIN at main.c (17, 3)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at main.c (17, 3)
+    remark #15527: Loop was not vectorized: function call to  cannot be vectorized
+    remark #25439: Loop unrolled with remainder by 8
+LOOP END
+
+LOOP BEGIN at main.c (17, 3)
+<Remainder loop>
+LOOP END
+
+LOOP BEGIN at main.c (44, 3)
+    remark #15522: loop was not vectorized: loop control flow is too complex. Try using canonical loop form from OpenMP specification 5.0
+    remark #25439: Loop unrolled with remainder by 2
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+DEAD STATIC FUNC: atoi
+
+COMPILE FUNC: generate_matrix
+   -> EXTERN: malloc main.c (13,31)
+   -> EXTERN: srand main.c (15,3)
+   -> DELETE: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+   -> EXTERN: rand main.c (18,17)
+
+COMPILE FUNC: main
+   -> DELETE: printf main.c (55,5)
+   -> INLINE: atoi main.c (59,14) (10<=487)
+      -> EXTERN: strtol main.c (363,16)
+   -> INLINE: generate_matrix main.c (64,7) (115<=250)
+      -> EXTERN: malloc main.c (13,31)
+      -> EXTERN: srand main.c (15,3)
+      -> DELETE: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+   -> INLINE: generate_matrix main.c (65,7) (115<=250)
+      -> EXTERN: malloc main.c (13,31)
+      -> EXTERN: srand main.c (15,3)
+      -> DELETE: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+      -> EXTERN: rand main.c (18,17)
+   -> INLINE: duplicate_matrix main.c (66,10) (20<=375)
+      -> EXTERN: malloc main.c (26,32)
+      -> llvm.memcpy.p0.p0.i64 main.c (28,3)
+   -> INLINE: duplicate_matrix main.c (67,10) (20<=375)
+      -> EXTERN: malloc main.c (26,32)
+      -> llvm.memcpy.p0.p0.i64 main.c (28,3)
+   -> EXTERN: malloc main.c (70,23)
+   -> EXTERN: clock_gettime main.c (73,3)
+   -> EXTERN: LAPACKE_dgesv main.c (75,10)
+   -> EXTERN: clock_gettime main.c (77,3)
+   -> EXTERN: diff_milli main.c (78,51)
+   -> EXTERN: printf main.c (78,3)
+   -> EXTERN: clock_gettime main.c (80,3)
+   -> EXTERN: my_dgesv main.c (82,10)
+   -> EXTERN: clock_gettime main.c (84,3)
+   -> EXTERN: diff_milli main.c (85,53)
+   -> EXTERN: printf main.c (85,3)
+   -> INLINE: check_result main.c (87,7) (20<=250)
+      -> INLINE: is_nearly_equal main.c (45,10) (-10<=375)
+         -> DELETE: llvm.fabs.f64 main.c (36,10)
+         -> DELETE: llvm.fabs.f64 main.c (36,35)
+         -> llvm.fabs.f64 main.c (36,10)
+         -> llvm.fabs.f64 main.c (36,35)
+         -> llvm.fabs.f64 main.c (36,10)
+         -> llvm.fabs.f64 main.c (36,35)
+         -> llvm.fabs.f64 main.c (36,10)
+         -> llvm.fabs.f64 main.c (36,35)
+   -> DELETE: printf main.c (88,5)
+   -> DELETE: printf main.c (90,5)
+   -> EXTERN: free main.c (93,3)
+   -> EXTERN: free main.c (94,3)
+   -> EXTERN: free main.c (95,3)
+   -> EXTERN: free main.c (96,3)
+   -> EXTERN: free main.c (97,3)
+   -> EXTERN: puts main.c (55,5)
+   -> DELETE: puts main.c (88,5)
+   -> EXTERN: puts main.c (90,5)
+
+COMPILE FUNC: duplicate_matrix
+   -> EXTERN: malloc main.c (26,32)
+   -> llvm.memcpy.p0.p0.i64 main.c (28,3)
+
+COMPILE FUNC: check_result
+   -> INLINE: is_nearly_equal main.c (45,10) (-10<=375)
+      -> DELETE: llvm.fabs.f64 main.c (36,10)
+      -> DELETE: llvm.fabs.f64 main.c (36,35)
+      -> llvm.fabs.f64 main.c (36,10)
+      -> llvm.fabs.f64 main.c (36,35)
+      -> llvm.fabs.f64 main.c (36,10)
+      -> llvm.fabs.f64 main.c (36,35)
+      -> llvm.fabs.f64 main.c (36,10)
+      -> llvm.fabs.f64 main.c (36,35)
+
+COMPILE FUNC: is_nearly_equal
+   -> llvm.fabs.f64 main.c (36,10)
+   -> llvm.fabs.f64 main.c (36,35)
+
+---- End Inlining Report ------

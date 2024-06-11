@@ -1,0 +1,156 @@
+Global optimization report for : my_dgesv
+
+LOOP BEGIN at dgesv.c (11, 5)
+
+    LOOP BEGIN at dgesv.c (15, 9)
+        remark #15300: LOOP WAS VECTORIZED
+        remark #15305: vectorization support: vector length 4
+        remark #15475: --- begin vector loop cost summary ---
+        remark #15476: scalar cost: 12.000000 
+        remark #15477: vector cost: 4.250000 
+        remark #15478: estimated potential speedup: 2.718750 
+        remark #15309: vectorization support: normalized vectorization overhead 4.937500
+        remark #15482: vectorized math library calls: 1 
+        remark #15484: vector function calls: 0 
+        remark #15485: serialized function calls: 0
+        remark #15488: --- end vector loop cost summary ---
+        remark #15447: --- begin vector loop memory reference summary ---
+        remark #15450: unmasked unaligned unit stride loads: 0 
+        remark #15451: unmasked unaligned unit stride stores: 0 
+        remark #15456: masked unaligned unit stride loads: 0 
+        remark #15457: masked unaligned unit stride stores: 0 
+        remark #15458: masked indexed (or gather) loads: 0 
+        remark #15459: masked indexed (or scatter) stores: 0 
+        remark #15462: unmasked indexed (or gather) loads: 1 
+        remark #15463: unmasked indexed (or scatter) stores: 0 
+        remark #15567: Gathers are generated due to non-unit stride index of the corresponding loads.
+        remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+        remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+        remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+        remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+        remark #15497: vector compress: 0 
+        remark #15498: vector expand: 0 
+        remark #15474: --- end vector loop memory reference summary ---
+        remark #25587: Loop has reduction
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (15, 9)
+    <Remainder loop for vectorization>
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (23, 13)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (25:30) and (25:32) 
+        remark #15346: vector dependence: assumed FLOW dependence between (26:37) and (24:23) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (26:37) and (25:30) 
+        remark #25439: Loop unrolled with remainder by 4
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (23, 13)
+    <Remainder loop>
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (28, 13)
+        remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+        remark #15346: vector dependence: assumed FLOW dependence between (30:33) and (30:35) 
+        remark #15346: vector dependence: assumed FLOW dependence between (31:40) and (29:23) 
+        remark #15346: vector dependence: assumed OUTPUT dependence between (31:40) and (30:33) 
+        remark #25439: Loop unrolled with remainder by 4
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (28, 13)
+    <Remainder loop>
+    LOOP END
+
+    LOOP BEGIN at dgesv.c (39, 9)
+        remark #15553: loop was not vectorized: outer loop is not an auto-vectorization candidate.
+
+        LOOP BEGIN at dgesv.c (41, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (42:30) and (42:37) 
+            remark #25439: Loop unrolled with remainder by 4
+        LOOP END
+
+        LOOP BEGIN at dgesv.c (41, 13)
+        <Remainder loop>
+        LOOP END
+
+        LOOP BEGIN at dgesv.c (43, 13)
+            remark #15344: Loop was not vectorized: vector dependence prevents vectorization
+            remark #15346: vector dependence: assumed FLOW dependence between (44:33) and (44:40) 
+            remark #25439: Loop unrolled with remainder by 4
+        LOOP END
+
+        LOOP BEGIN at dgesv.c (43, 13)
+        <Remainder loop>
+        LOOP END
+    LOOP END
+LOOP END
+
+LOOP BEGIN at dgesv.c (48, 5)
+
+    LOOP BEGIN at dgesv.c (49, 9)
+
+        LOOP BEGIN at dgesv.c (51, 13)
+            remark #15300: LOOP WAS VECTORIZED
+            remark #15305: vectorization support: vector length 4
+            remark #15475: --- begin vector loop cost summary ---
+            remark #15476: scalar cost: 9.000000 
+            remark #15477: vector cost: 3.046875 
+            remark #15478: estimated potential speedup: 2.859375 
+            remark #15309: vectorization support: normalized vectorization overhead 1.968750
+            remark #15482: vectorized math library calls: 0 
+            remark #15484: vector function calls: 0 
+            remark #15485: serialized function calls: 0
+            remark #15488: --- end vector loop cost summary ---
+            remark #15447: --- begin vector loop memory reference summary ---
+            remark #15450: unmasked unaligned unit stride loads: 1 
+            remark #15451: unmasked unaligned unit stride stores: 0 
+            remark #15456: masked unaligned unit stride loads: 0 
+            remark #15457: masked unaligned unit stride stores: 0 
+            remark #15458: masked indexed (or gather) loads: 0 
+            remark #15459: masked indexed (or scatter) stores: 0 
+            remark #15462: unmasked indexed (or gather) loads: 1 
+            remark #15463: unmasked indexed (or scatter) stores: 0 
+            remark #15567: Gathers are generated due to non-unit stride index of the corresponding loads.
+            remark #15554: Unmasked VLS-optimized loads (each part of the group counted separately): 0
+            remark #15555: Masked VLS-optimized loads (each part of the group counted separately): 0
+            remark #15556: Unmasked VLS-optimized stores (each part of the group counted separately): 0
+            remark #15557: Masked VLS-optimized stores (each part of the group counted separately): 0
+            remark #15497: vector compress: 0 
+            remark #15498: vector expand: 0 
+            remark #15474: --- end vector loop memory reference summary ---
+            remark #25587: Loop has reduction
+        LOOP END
+
+        LOOP BEGIN at dgesv.c (51, 13)
+        <Remainder loop for vectorization>
+        LOOP END
+    LOOP END
+LOOP END
+=================================================================
+
+---- Begin Inlining Report ----
+Option Values:
+  inline-threshold: 225
+  inlinehint-threshold: 325
+  inlinecold-threshold: 45
+  inlineoptsize-threshold: 15
+
+COMPILE FUNC: my_dgesv
+   -> llvm.fabs.f64 dgesv.c (14,18)
+   -> DELETE: llvm.fabs.f64 dgesv.c (16,17)
+   -> DELETE: llvm.fabs.f64 dgesv.c (17,26)
+   -> llvm.fabs.f64 dgesv.c (35,13)
+   -> DELETE: llvm.fabs.f64 dgesv.c (53,17)
+   -> llvm.fabs.f64 dgesv.c (16,17)
+   -> llvm.fabs.f64 dgesv.c (53,17)
+   -> llvm.masked.gather.v4f64.v4p0 dgesv.c (16,22)
+   -> llvm.fabs.v4f64 dgesv.c (16,17)
+   -> llvm.vector.reduce.fmax.v4f64 dgesv.c (16,17)
+   -> llvm.vector.reduce.smin.v4i64 dgesv.c (11,5)
+   -> llvm.cttz.i4 dgesv.c (11,5)
+   -> llvm.masked.gather.v4f64.v4p0 dgesv.c (52,37)
+   -> llvm.vector.reduce.fadd.v4f64 dgesv.c (52,19)
+
+---- End Inlining Report ------
