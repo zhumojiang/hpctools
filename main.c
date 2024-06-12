@@ -1,4 +1,4 @@
-#include <openblas/lapacke.h>
+#include <mkl_lapacke.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
@@ -10,7 +10,7 @@
 double *generate_matrix(unsigned int size, unsigned int seed)
 {
   unsigned int i;
-  double *matrix = (double *) malloc(sizeof(double) * size * size);
+  double *matrix = (double *) aligned_alloc(32,sizeof(double) * size * size);
 
   srand(seed);
 
@@ -23,7 +23,7 @@ double *generate_matrix(unsigned int size, unsigned int seed)
 
 double *duplicate_matrix(double *orig, unsigned int size)
 {
-  double *replica = (double *) malloc(sizeof(double) * size * size);
+  double *replica = (double *) aligned_alloc(32,sizeof(double) * size * size);
 
   memcpy((void *) replica, (void *) orig, size * size * sizeof(double));
 
@@ -67,7 +67,7 @@ int main(int argc, char *argv[])
   bref = duplicate_matrix(b, size);
 
   int n = size, nrhs = size, lda = size, ldb = size, info;
-  int *ipiv = (int *) malloc(sizeof(int) * size);
+  int *ipiv = (int *) aligned_alloc(32,sizeof(int) * size);
 
   timeinfo start, now;
   timestamp(&start);
@@ -89,7 +89,7 @@ int main(int argc, char *argv[])
   else
     printf("Result is wrong!\n");
 
- 
+
   free(a);
   free(b);
   free(aref);

@@ -1,0 +1,1223 @@
+# To display the perf.data header info, please use --header/--header-only options.
+#
+#
+# Total Lost Samples: 0
+#
+# Samples: 8K of event 'cycles:u'
+# Event count (approx.): 6102391334
+#
+# Children      Self  Command  Shared Object           Symbol                                                                                 
+# ........  ........  .......  ......................  .......................................................................................
+#
+    79.99%    79.99%  dgesv    dgesv                   [.] my_dgesv.extracted
+            |
+            ---my_dgesv.extracted
+
+    13.96%    13.96%  dgesv    dgesv                   [.] my_dgesv
+     1.71%     0.00%  dgesv    [unknown]               [.] 0000000000000000
+            |
+            ---0
+               |          
+                --1.70%--0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          0
+                          |          
+                           --1.56%--_INTERNAL01e60a8a::__kmp_wait_template<kmp_flag_64<false, true>, true, false, true>
+
+     1.65%     1.64%  dgesv    libiomp5.so             [.] _INTERNAL01e60a8a::__kmp_wait_template<kmp_flag_64<false, true>, true, false, true>
+            |          
+             --1.60%--0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       0
+                       |          
+                        --1.55%--_INTERNAL01e60a8a::__kmp_wait_template<kmp_flag_64<false, true>, true, false, true>
+
+     1.30%     1.30%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dgemm_kernel_0
+     0.48%     0.46%  dgesv    libmkl_avx512.so.1      [.] mkl_trans_avx512_mkl_domatcopy2_t
+     0.48%     0.00%  dgesv    libmkl_avx512.so.1      [.] mkl_trans_avx512_mkl_domatcopy
+     0.36%     0.36%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dtrsm_kernel_ll_0
+     0.36%     0.33%  dgesv    dgesv                   [.] main
+     0.33%     0.30%  dgesv    libc-2.28.so            [.] __random
+     0.27%     0.00%  dgesv    [unknown]               [.] 0x4049800000000000
+     0.25%     0.25%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dtrsm_kernel_lu_0
+     0.23%     0.00%  dgesv    [unknown]               [.] 0xffffffffa48010e0
+     0.21%     0.00%  dgesv    [unknown]               [.] 0x3f84afd6a052bf5b
+     0.18%     0.18%  dgesv    libmkl_core.so.1        [.] mkl_lapack_xdlaswp
+     0.17%     0.15%  dgesv    dgesv                   [.] __intel_avx_rep_memcpy
+     0.17%     0.16%  dgesv    libc-2.28.so            [.] __random_r
+     0.15%     0.00%  dgesv    libmkl_core.so.1        [.] mkl_lapack_dgetf2
+     0.14%     0.14%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dgemv_n_intrinsics
+     0.14%     0.00%  dgesv    [unknown]               [.] 0x3ff0000000000000
+     0.10%     0.02%  dgesv    libc-2.28.so            [.] rand
+     0.10%     0.09%  dgesv    ld-2.28.so              [.] do_lookup_x
+     0.09%     0.09%  dgesv    libmkl_intel_lp64.so.1  [.] LAPACKE_dge_nancheck
+     0.08%     0.00%  dgesv    [unknown]               [.] 0x4050c00000000000
+     0.08%     0.08%  dgesv    [unknown]               [k] 0xffffffffa4800b87
+     0.08%     0.00%  dgesv    [unknown]               [.] 0x4042a95fad40a57f
+     0.07%     0.07%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dgemm_dcopy_down24_ea
+     0.07%     0.02%  dgesv    libiomp5.so             [.] kmp_flag_native<unsigned long long, (flag_type)1, true>::notdone_check
+     0.07%     0.07%  dgesv    libc-2.28.so            [.] _dl_addr
+     0.07%     0.04%  dgesv    dgesv                   [.] rand@plt
+     0.07%     0.00%  dgesv    [unknown]               [.] 0xc00757e88a4d49bd
+     0.06%     0.00%  dgesv    [unknown]               [.] 0xc03de2ef242a0d81
+     0.06%     0.06%  dgesv    libiomp5.so             [.] _INTERNAL01e60a8a::__kmp_hyper_barrier_gather
+     0.05%     0.00%  dgesv    [unknown]               [.] 0x4044528f24fe806d
+     0.05%     0.00%  dgesv    [unknown]               [.] 0x404bae929fb81b89
+     0.05%     0.00%  dgesv    [unknown]               [.] 0xc02663b8884aece5
+     0.04%     0.03%  dgesv    ld-2.28.so              [.] _dl_relocate_object
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x403d77f9a0274d87
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40550a0de2427beb
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc030176aec71cbfa
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4048d0ac329a47c4
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4056bd5abe7065f7
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40006cbbbb6a20d8
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4024785c0f36a20a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4060259dbb5341b4
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04602883bf4fbde
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4053150123e670ea
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405c165172be29d8
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04dbc48cf9a2bee
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4049a5d81e4091c2
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xbff92a3987044ea7
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405995f0e7a9ffc1
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04a550322d7e8ec
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40528c477f9ccc88
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40540ad188580a0e
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc037a87039960c9a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc025e21c5b6552fb
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40555eda0c817ea1
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x406e3891654532d3
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc02c6e976d2b4e82
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0544dd81baaec25
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40611352a7c4dfcb
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc05a05e9f91be9d1
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4050034b4c3dfcf8
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4056d9e583c7b6ef
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405db4b4ef1d6ced
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4053bdb9bf83cff5
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x406105cd6bdffb42
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc06062859d3e7ec8
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40092b4d0528fe77
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc037b72cce50fdbd
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0517321eb4fa9f3
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4042ecb78a3c906c
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0634e71f489b587
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405847111eeebdb6
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc061c887db356769
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0401c9e02416048
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405be33736314126
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc060b41d7140aed1
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0538869e6d1bb69
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc02790b6cf4981be
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4054d53479c8c57a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x403a9fa25a314e90
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x404d86cd0e57cc59
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x403928e97ab9e95a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc050ac6d0ca6ca41
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc02478190f77f600
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc0408cee61375821
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4054378b0cf7bf22
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04eecb259980c97
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40039af527183c8d
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xbffc965e98e6f1a7
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc055f729920a6e24
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04b597b014724dd
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x406a3aa57c7386b6
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40349cd7be8b1389
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc03f710e38616b23
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc05c77734196b485
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405438fac5ebbf7c
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x40400f17ce31c551
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4056f2bc2410a60d
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04f543415f4a5cb
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc02e0a7adf82dcc1
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x402a43b737123055
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x4041166a98d93906
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x406522f9b6e3a6fc
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc020d339beca54f9
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04bf3508412eb0a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc05205e53cd555f4
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04af6c7a567114a
+     0.04%     0.00%  dgesv    [unknown]               [.] 0xc04f905d1f850a03
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x404e2fdd99e921a3
+     0.04%     0.00%  dgesv    [unknown]               [.] 0x405902b9e872336a
+     0.04%     0.00%  dgesv    ld-2.28.so              [.] _dl_sysdep_start
+     0.04%     0.00%  dgesv    ld-2.28.so              [.] dl_main
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0731baaef5cb851
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc02e7e16d91742a3
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4074f707779060cd
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc051b6ba52533869
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06253dc52e54ad4
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc076c9a2ee95a8da
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0459560aa79f31d
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405cabee65e2286a
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03271b2eb5f4dd0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04950349e563d5c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404871c12106cf90
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4069b7b66f8b0dd7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x403980fbb3a8f592
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05175ee8bffb348
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc074f4ab8a2fafa7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4051f840a56d0388
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4051895607b47cfd
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0165af7998ec436
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05133102d151225
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03bed22e706d548
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0647922be7185bf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0574251b5f91c7a
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40605fe07227178f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc059a6d4170d38bf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404082ff54773673
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc041478965f5a468
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4053dfa8fd543770
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40805ffd72c1df54
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40517b8318985a33
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0501f490ed4278e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03307d00962e601
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05188671f086292
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x407409c9f355327b
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc040d2cabb6a236c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07038267cf2b1e0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0553e0cae17c96f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405514aab9694e81
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406bc570068ecf9a
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40390a35dfc34ee6
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0323b312fce6585
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405c41db707a8365
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40668a69f3ab0b82
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05ba99de13779e3
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406ee05e4b2837d8
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06a7c9dc0fb5441
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40513da765ec2d2f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40402417371d46c9
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0624bc366a33ef8
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05b122994df64a0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4044c81a816bcdf2
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc055d962ad88063f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc075e1b76d02153f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406c0e4db385bfe5
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4070f9765957000b
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05ac3298d68bc60
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x402c6818bb0ba035
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc049b57203db5218
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x407557080cc01e37
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x407796e484879a75
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06ef87eb1aa5eee
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4072b734645fb821
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40553e27b6060d78
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404e562239d3d001
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404eef6b055066ce
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0646a1d5d676750
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04d9c5021fb4532
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4033b877a5385b28
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x401d2f041e82f943
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05ab1b4339d74b0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03b1cbabcdd21bc
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40580ce28d0b3b14
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0728ed4ef1a3464
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405ef556f12a3ac8
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40404d8d1faac8da
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40634c1747ee1801
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc057c7c1ca0abc63
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc055c851a6bf100f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0428f08ebe7a1c3
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4075acf9c5d1326b
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc076510d7929af15
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05b8efd028a67cf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x3ffbcd0133f123b0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06842b03a993b4d
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc016d8c13e695042
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4046423eae8445dd
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40308454925d9e1a
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc051f7b7b5c0ed90
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0431efcf4e3037c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404e7ccb94b65bf2
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc072c9555e748c90
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc033588c2f5f1268
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4063ed16fbf025b5
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40688fbda2ae75cd
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05a4f67df13e007
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4066ee13927824ba
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405b7d5260d1733b
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03ee6486739e11f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405676cbd300539c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404a91b248927012
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06267ec82a4a671
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4058d1d65467d92a
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04eae5fc5f6f91e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4065d41c60eb2106
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc068368ad56b7254
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07454fe61fce3b7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07c81f87e2ce4d7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04c29077bf7fe30
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40358c08029d55e7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4046082828511860
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40362c8e4e38d72c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405adff7ccee509e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc067dadbb47e3289
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0732e4ae83b6a28
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40617b171db16c96
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x402271dba5671a76
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc041055e013ededf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc02c00c4f2ea873e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4062d171201ac7db
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40675ba66c4d9e23
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40625a2eeed4fe25
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc055903981f1057e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc068b67fbf80f669
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07e869f38b05d48
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc065bf5a76b66686
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0408b56b6fd687c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405adb4c11dd9e67
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4028ef2c6ddc2b07
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc071cd565deddd65
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405648cec04e1384
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0484c925245b6f5
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4074a03a90791f44
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06c60b674776c99
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x403a0839d775d3cf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06095f9c349ca44
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc050774d532569f5
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406085c0e352c7c0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x407012d67322de02
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4031e649acf82fdb
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07e72bd6e840d19
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4063ea40f54acdc9
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc039fd99153a09d2
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc07d56eee3d100f2
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc068bf17d7ce39e8
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40646e6784ce6079
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04845d53ee2c17f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0704e47e01b5453
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406d8fbe87f56996
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc071f9974d2dc8ea
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405d25621dc914ab
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40514b12ed345bfc
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404c6f62292ac366
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05f1b2b760ac8a5
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06381befeb0c6cf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc076cffcd1a373ee
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc05271016e1167d9
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40546e7cdbb93ab0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4080ea456b11cac4
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40203db1f29b4bf3
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xbffa7190f3238525
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405404c35cf78687
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0661c60a8550a75
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x407390a8f2607edf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4078015b960f513c
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0675a455b12d593
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc04376eed61401e2
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc03a922ec8c579bf
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x404e64a5552e77e7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4065afc0d4174557
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406aeb362e6cfa17
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406473a517807370
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4058c6e78a0f1cd4
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4053cb5aeb7ba34d
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06d15e44e4dda41
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0498c63f8cdc433
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0701958a40728e9
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40510400b6eb6ddc
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405275f64638fdcc
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x402a0bc2323315c7
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc06c1de8b4f1b9d1
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405139fa972e284e
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc066b455776cac96
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc037c45e10149344
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40738c8d13995c58
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406c527bd3fa1f02
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc040b68e7001a51f
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc063c3b100ba581b
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x4068b636605e1c12
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x40210e710194f537
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x406489d97946ea8d
+     0.03%     0.00%  dgesv    [unknown]               [.] 0x405c1ae1a9e002e0
+     0.03%     0.00%  dgesv    [unknown]               [.] 0xc0550ce797b64910
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc06b7cdcc4e4a529
+     0.02%     0.00%  dgesv    [unknown]               [.] 0x40773487772ca6cd
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc057b986c8df5aa4
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc04340cecc7810d6
+     0.02%     0.00%  dgesv    [unknown]               [.] 0x405bcd8c76ff64c0
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc01f996e3af801e8
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc0688e1acb6d32fb
+     0.02%     0.00%  dgesv    [unknown]               [.] 0xc072ea6fb4980ad1
+     0.02%     0.00%  dgesv    [unknown]               [.] 0x0000000065736f70
+     0.02%     0.00%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_xdgemm
+     0.02%     0.01%  dgesv    libiomp5.so             [.] KMPNativeAffinity::Mask::set_system_affinity
+     0.02%     0.02%  dgesv    ld-2.28.so              [.] _dl_lookup_symbol_x
+     0.02%     0.00%  dgesv    libmkl_sequential.so.1  [.] 0x00007f43d31a5688
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfc54fea021a716a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fef5deb1a2da50b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbffb3383aae8a14a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3ff67fac1da8ee77
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfd7cdfa6644f740
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbffc426816bbc081
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fe58b8f58b5fa9c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfee7222b3810ae8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc005fe76747bf1bc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfe602fa8b64bca6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3f874375bcf14c4f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc01426e378813b9a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fc6a29a3a08a51b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfdcae1274cb19f4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4012c661b2583dba
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc00d3ab309a13e82
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc006756055854766
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3ff215919931b2cf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfe1aafbcaa1c7c8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4006fbf4d956d57d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc007ab0eb2fdcac3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05d5cd2f6b127a9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbffa6f9528afb0d2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3feec1f016f0c08e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fe1cce769b601c1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbff112d95f7a5684
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06d5485cf111e5f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0709619021c0b9e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fd246e41c7a4342
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0704dd0e86e584f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407918afad66a7df
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fd5b1d461ebfe28
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4060a0569b6fbc92
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc02516278db674a4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4011718ba6f1209e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406fb2a2035f8c49
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0698a7f54453b59
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc054569999e4bc50
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ac67c3752d529
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05c5af22de1ed1c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc033dbb38e82c12a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4012755a003287af
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40609c9d6fce125b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fc1828ae0ce51f5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40707085593a9703
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4077854e8c9d4311
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407e8f365dc5f079
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4047c6c9e8fd898d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05a97fdecac379b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405a29d30496ab6c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfdd9d2d776e5d1d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05e4d67817eba22
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40775b0790c7712b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc067059df560cfaa
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406d5852c6bf2e87
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ec56ce806918a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405fe63aba991274
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc030b7972bead1d1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406515fa7c80310e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40771053d4f28e34
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0690e3a320b5e21
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc069938a8d551a8c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40452d5255c80798
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405ce88ec6ad3f3d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05585621762ed93
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406c40b4af3535c0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4069a32b534e2e04
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4056bf4f88c25a81
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc065624c9854945a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0712f831fbb23b4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407bb6b366913b19
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07235f4d88b1c62
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3feb76a780a0469d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0618b56c581b9ec
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05abba8d1b42f53
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fd03f1474cd0ab6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc070a824f15c560a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05073e0e4390f53
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4046d1fbc6044309
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4048ac69e06e98fe
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0614fe9be35bc28
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4038e5a2abbad8b1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05d1b54edf8ee87
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06e8b508dba0290
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0794bbe17124ee6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc041f8d2f6f6ddc3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4036bc1debec2986
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc046c7519d330f31
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40343d630efeea22
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4068cf342da45c96
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40749a1399821eb9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4066d18555e8252c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05dccd53a8e9c89
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc042d57bdf6871fa
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406c7f969cecaf4a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4070a169224f6ffa
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fd0d7e83d09273c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406dc1dfca63438a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05097a60b9e917b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc059a59547b921b3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fe3e0a4120cd74a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406102134ec7006f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405c219e1b2b26de
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40625f5c739410de
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407bdc1ad9a10083
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06972e1daaf2f7a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc03545f8b5e7d7d8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3f63286bbdec3d04
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06e00fecac07950
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406929e413fe3de9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3cc1267850f45fb0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4045194c7b4ace24
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405aa14932fdcdc2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40229a12401aea57
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405f76eba2bfef0d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ebb3096dd19eb
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfe557b415944a24
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4066d0b6488b536e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403a657ed9b053a6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0424ccc831f99b8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40604649536a66cd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4078761c55f017a0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc02d26659216fc5e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05b15cd3b36fe03
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc058b749cc068fd7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0861052e032a8b5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0807b4038a0410f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbce3484c21026390
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05afd49e42ef9db
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc060ac377f60bc22
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc072c6a113b57a58
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405b37644664e6cc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07e1ee2675c89bf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fb51bbf7d9451a9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4070729ea00a210b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3cb1e10d0fe2e8f0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4068478014e0cda3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07a611d8c53e81e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40600c3e73440085
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4072637a5dff571b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4082247755f57bc9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401377786beaca9d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06e9263d2da9a60
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40766a5f3c09324a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfe8a12b947de568
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405320d3a7c62a5f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ac375177c5175
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc068b752cbe87e80
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405de78135958839
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc077d8d90c37152e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07075f31bd5c0ab
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4054d9aede684364
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc068c24956ed4211
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407e771d4b90524f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc076f76c50fb1d46
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404c1a654e63bba2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05ee73811d0c1e8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4074ff79acae29b5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0453540a2b0896c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07c9f37b6983c87
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405d50b3dd000a53
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407255ec2077ff57
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405c9042563634c5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4057cd03252a4444
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4071c228a7dc8d15
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4068873c9a351a37
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc049dcf26137488d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4071484b3e5923cd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc080d9fb297bd4a9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406a361dc325527b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4076c28a2e4468a6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbcf01d7c9b3409b0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08338f680a5a220
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0626a59ad9177ac
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40600acdd03b9600
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc000161b9c3b2153
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x402ab1bb208a30ef
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07732935f585b96
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406f5d0e3d58f426
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4076a32582a50f4f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407b04de7a5784d3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0875d5242c16e3b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc043f15f3ba652f6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08278e38e08a86b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc010113d17ebc855
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40778ae9e26eafa6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406d551342effd79
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407bf956612208a6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407843eadc555776
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0784a90a1ad138d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4039bbeab128fc74
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0385f54e0a7b6e7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40611a55636a9160
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40523164ac34efcc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0725cdd5064644d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40374934a334648e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc060f8f7f72b4d64
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc055edf82a2b696c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40829a44943efd40
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07abd607d5ba664
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc078ba351c56df0f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06f3d3ac1e4de32
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc066f0f069eeb251
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0783eacc3332a86
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc071f2ad6d285a24
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc070b4fc3653ab43
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405a1624e4b2c3f5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40696af85c75dbe6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ba6da5dc54894
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07a8df9fe520f4f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0607873e724bc84
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07ab65f195d0dca
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0729a3dd8a19b30
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07d1da1b6ee32cc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0784969e42f494e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4056615aa41ded5b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4063e090b7042346
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401083c046fd5424
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc064ab68bb46d393
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4039299bfec544fd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06d0bf2120d9cf0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0757dc0bd4ec4f7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08728d651598bb1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05ad0cacf1932b0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0820ec535f0344b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07d422273144612
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4052d51e4f7e67e6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0669ea3d777f5f9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4077d5ecc9de11b2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0004dc63afada86
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406f084225dc24e4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0228332f1112ead
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0711859eddadc26
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc053d0676294430f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4061f7fc855a30c9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x400bba2478941152
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fdd91e1ffce0b34
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc006f3061d80e8d6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbcdcddc84dcfecc0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06df8e9ac979108
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406274b5d90b2af7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40760af20133c18a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc079c1bbe1800208
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40599da035d01daf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4060c51bbcb2b48c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04b7ccffe3e0dce
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407e431cf5b6594b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc03ab11a3e84cf64
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40574b2906413f78
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40514fa530bcd99a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0847114cbb520ef
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc040a409c3427325
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc061007a42112a14
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406ac7023bf5e946
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4065eedc3b07d023
+     0.01%     0.00%  dgesv    libiomp5.so             [.] KMPNativeAffinity::Mask::~Mask
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404be7acf348c0a7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0532c4c608bc57b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4083add3ca904b79
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4065cd47aae9bfc3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408ea9dc276bf62c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08265bf71878339
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x409182e378e1e346
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407cc7f6f58eab40
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc085249d3c243bfa
+     0.01%     0.01%  dgesv    libmkl_core.so.1        [.] mkl_serv_get_fast_mm_status@plt
+     0.01%     0.00%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_xdtrsm
+     0.01%     0.00%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dgemm_free_bufs
+     0.01%     0.00%  dgesv    libmkl_core.so.1        [.] mkl_serv_get_fast_mm_status
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07977a6f3ba6255
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06671d60c7f3a3c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05e2c02bad448e0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401bbc54aeabf319
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06d855554f3b75d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40607982cf6e7e19
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0745becc2a7bd95
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0626eae4c2b5fca
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0654d707e29ddea
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4077a97bd0fad470
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08286859cd3245d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07ea6b134795813
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0934715abb3f83e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4064082b51fa97a8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0753c3261c4b4e9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40720758bb4e58fb
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x409044addfdf6599
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc02b190d6137499f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40620046b3faa91d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403b3174a840d070
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4062aa11b18ef139
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06892507f630536
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc078f28b94a209a0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04f03f543ac54be
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406321dc6b22d703
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407242b3c4a22a2e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06faf83f509e2cd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40655b6769f5fe59
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4070b224985823f5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405b051adc6864f7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc09276ea457d0ba8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4089c6ca41c7f247
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06a4fbc1381b0a2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408350c591888522
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405eadbcddea2214
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40447e6b57aeb77c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc076c2acb8778b45
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405620e2ddab063d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc02e79121a318c0c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07098798fd67913
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06f4cb32c9818df
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408bafe11b53ab20
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4066bd276678252c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406849a7faa5dae7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4069a441e88b9442
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405fc4af55d17ea6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407f15340dd2e94c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc083b932cd036758
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08783af789a6e65
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc061a7de870ec1d5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc077a9f02f7ef860
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407ab7dbd05561ae
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40786d2b008f5918
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406de7bb036c4e75
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06021154dd63a39
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407ce0eb43715dd1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbcdff8d9cd30b5c0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0510ab4a30db1d4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408103f67bb79606
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4089509c060d33ba
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407140bbbc4301c6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0627b2eb4f236ee
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc092b94890cd1724
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc072d4aa2d1a20d7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0734a9888b4e62b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4073e1be5385e042
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406a2890fec0830d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x402d2154b40bfad5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406130ad69cb1ba8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc071d5edf7f7cb42
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc087d1267bccfed2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0656bf47b414b3f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06ec3d73d93e595
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06417773cbb9084
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbff0a9d37870164d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408036fd8b285331
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04cd0b3e6cc7a6f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05013c415e6cbe8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc084208b450b2d59
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406d5d881fe1a294
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408522840e3d2622
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0441f24352a03fb
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4010548abc9bed1e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07104b180c9b09d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04cd0d7d6622f55
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406300415262fac0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc077600999aaa8a7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4081991e3a3443b0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc085a1748b4be3dd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04605aac2309437
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406f3b557991f079
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4073db5cad3c5738
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0590d5006d693c8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0550b5390b5ee3f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc071aa182a49cfc3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40633a54f86b834d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405c2a0e413d6d86
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07a9c9f24ea9116
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40765ade892e4a99
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0690f56fb57a8a0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4067be061981a379
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0732dacdc866071
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406204423dbde854
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08025f491b1e31e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407f608704a724ee
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08f65dd89ca0469
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40794c01b9f2ae1c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0728d75581eca64
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04e28886d92c163
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc063e3aac5bb333a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc088b90e5184c992
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0533abec31ee8d0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40405aaa799970a8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4073613e666df794
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0652faf90772060
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc075595604e9be32
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4083c01d47d9c8e3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc089dfd7ae2fc207
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0676d53a9bc969f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4055ab89139155b2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405da062369472c7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x400035f78a4bb7e2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07099317d2f7958
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40660c600dc7d554
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40565ae659e69322
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407e6df76d6ba949
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404943702ead8f85
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408912b1af1e8d02
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05263e1ba62cc9f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc065c5fc19017229
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05b0d03b5e7010b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc00b6b796b83e71f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc042681719205d80
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06b5b6786b1a207
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc055b54d3b6b70fe
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40758018d6821eb2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40643577ae0843d2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06f0a13a0285d89
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406beaa290b66216
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc055dfeb86081232
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4067311e846f9aa4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407150f9ab3b381d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0792270ea3be857
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4069dfdc3d53b067
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0612f6fe64d4539
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40710a665a37d5b9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04bad439c69df96
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc062f98229c8ac59
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0654ad2476ece08
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406577cbee296044
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407c4fb0a93aca28
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06bfb00da88cb57
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0684c0d8a6f93fd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc072e89465f45975
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40736373de05ff9f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbff13c35787e8320
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc074ef166038941c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc068a2ac5fffab01
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401eb226d5495b86
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4077efa9ba7f0312
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc065fde2e85d2e10
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3d01a2d793fdb9c0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc062920bffad062f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4006d5742cf68b0d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4054323f299933df
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0859e9d28a8a9cf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406afbba1b8ccf3a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0600d5d80e069f2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407359e824211b61
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x400455789683cf94
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc067c3db5635bb98
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4051f99aff31c2a4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06409836fdb0db4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407711e00970fde6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc069ac98ac6a11ca
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4055ed0cb9ca7859
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06603cdef3f148a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0565ccf869779b6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0728229182db817
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40620a54dd978005
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc03d639db4357345
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406b2e57d1a4e18a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05bc662a190c8df
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc078d37e69305950
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc068ce46de4e9c27
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc069d13b446d39b0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4052f713882d98fd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4076da72a58aec82
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0677e74dda74fb4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407011b3f215bdfe
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4061c9ea48346f80
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40411bf81dc5b15c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06f2e0d8b107c71
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x407c63d39cbf14f5
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0040145b6ac4a94
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0353c187ae14c96
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06bdb92ae1bbfe7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0708ff83a464042
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc049a95b2764ee66
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403e9606c2ddd56b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0430029f3a1c80b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405868e438b043d0
+     0.01%     0.01%  dgesv    libiomp5.so             [.] __kmpc_dispatch_next_4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xe176378c00000000
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406ef2c6ab8dfb3f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4025d2fe1f138ada
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07ce713c30e15be
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406ab5863303e8f0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc00344c0be5327c2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406e88e1b74c47bf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405e38400ff479b2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0593a9d322c90ba
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405f4afa443406f8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x3fcdceec38556968
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0675ceb749f68d7
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4061dc2956ff4689
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404c1b20a24cac12
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0642039bb48dce9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x402da190a4f26b1e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0631b1d4e8f568e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07d5c17f2bb372d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04cc22b5000273e
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07049c78865a4a8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40631d5420be5c91
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbffad9b7721bfe52
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfd1117985d6c012
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4047398937b66ff1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40634fb427fbc546
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05189b96fc3f4e8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0642483a067200a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4051f2988f413e4c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06707ac5e45a501
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc02811bbfe76dd89
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404efc523a8693da
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc077756fd0095055
+     0.01%     0.01%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_xdswap
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4073723fcff7ff00
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40552998ec88aedf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4043bc5a15cb0e60
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4048277fbe3fbbee
+     0.01%     0.01%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dfind_idx
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x0000000000000330
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0901e1ed320dfa0
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07cbd9dae76a6e4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4072c3a7a60b9933
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406243b42913dffc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40677288a6815de1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07369859ff795ed
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07747488291ee4a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401ef0ae3e460f2c
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405b2e13542069f9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc050f954ae960387
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4056c40284374c2a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc05e354d9cf3e961
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4043dde83db2d7a4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0222fd23859bb39
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403a0f46f6cf8bb8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4065798706cd3790
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc044e241d43b679b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405e0054d01fb7b6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4028d01efcba2ca8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406a8cc361dec431
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc060bc1ce8154529
+     0.01%     0.00%  dgesv    libiomp5.so             [.] __kmp_yield
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403ad8c481703e1a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4055042ddd7e8259
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06a2166595e1087
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x403d06baeddd7c99
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40520015b1116fe6
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4045153f526e0001
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40516f5f522e49ef
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc054470960cc5649
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0585c384ba98986
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06319499e260c9f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4061e005b62a3688
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40443b4b75d9cad1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc06a03a16ab8c8ed
+     0.01%     0.01%  dgesv    libc-2.28.so            [.] syscall
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc006e044fdf81642
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc043e3f3e3bc8795
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40183b2de8667cbc
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04c1b26425f7367
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405bdcc953d1383f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4064661b8c7e5cd1
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc059b8b4ef34454d
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4024bbd9ccf399a3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40300d98aa7ba619
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4810508d48003912
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x00007f43cad17c80
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405b9b96c9abe699
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0646bb6dd370f57
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04ad4673a050fc2
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x401ab436fcb344bf
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x0396a83000000000
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404a93a9b8c7e1b4
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc03b08f55c2700c8
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405a01df0f2fd2cd
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x402c4868ea9d9f7a
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbffd5a4f4f6649bb
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x406a5c1e4b3066ca
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404755cd765b7276
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4073fa1e0fcdbe49
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x402c2bd969902bb3
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0409c465f1d46e9
+     0.01%     0.01%  dgesv    libmkl_sequential.so.1  [.] mkl_lapack_xdgetrf@plt
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x0000000000000400
+     0.01%     0.01%  dgesv    libmkl_avx512.so.1      [.] mkl_blas_avx512_dgemm_dcopy_right8_ea
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc044f01d29fdcb9f
+     0.01%     0.00%  dgesv    ld-2.28.so              [.] dl_open_worker
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x400379f63604a500
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40432fe8e7bc9b1b
+     0.01%     0.01%  dgesv    libiomp5.so             [.] __kmp_hardware_timestamp
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404b68dbd45d821f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04d6eaeed23bc78
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x408610461b967393
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4070c1d2f8fa16d5
+     0.01%     0.01%  dgesv    libiomp5.so             [.] rml::internal::Backend::IndexedBins::reset
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x4076a8ee6bce3e9f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x404ffff93fa8405e
+     0.01%     0.01%  dgesv    ld-2.28.so              [.] check_match
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405c7111838e4652
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc04326c8cef56991
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x0000000000a70480
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x40600d816c67edc9
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xbfc4afd6a052bf5b
+     0.01%     0.01%  dgesv    libiomp5.so             [.] KMPNativeAffinity::deallocate_mask
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc03b8819b5da2b3b
+     0.01%     0.00%  dgesv    [unknown]               [.] 0x405bc2de482dd56f
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc08518d30a048421
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc0726305db046201
+     0.01%     0.01%  dgesv    libiomp5.so             [.] ___kmp_free
+     0.01%     0.01%  dgesv    libiomp5.so             [.] KMPNativeAffinity::Mask::next
+     0.01%     0.00%  dgesv    libiomp5.so             [.] KMPNativeAffinity::Mask::is_set
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc07cd40336578f92
+     0.01%     0.01%  dgesv    libiomp5.so             [.] __kmp_affinity_bind_thread
+     0.01%     0.01%  dgesv    libiomp5.so             [.] __kmp_x86_cpuid
+     0.01%     0.00%  dgesv    [unknown]               [.] 0xc070f39122d8799f
+     0.00%     0.00%  dgesv    libc-2.28.so            [.] msort_with_tmp.part.0
+     0.00%     0.00%  dgesv    [unknown]               [.] 0x4057797fb45b018d
+     0.00%     0.00%  dgesv    [unknown]               [.] 0x406934ff5700f3df
+     0.00%     0.00%  dgesv    libiomp5.so             [.] scalable_aligned_free
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] _dl_map_object
+     0.00%     0.00%  dgesv    libc-2.28.so            [.] __x86_cacheinfo_ifunc
+     0.00%     0.00%  dgesv    [unknown]               [.] 0x6262742f00000000
+     0.00%     0.00%  dgesv    [unknown]               [k] 0xffffffffa48001a3
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] _xstat
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] __GI___tunables_init
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] open_verify.constprop.9
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] open_path
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] _dl_map_object_from_fd
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] mmap64
+     0.00%     0.00%  dgesv    libiomp5.so             [.] ___kmp_free@plt
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] _dl_map_object_deps
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] strlen
+     0.00%     0.00%  dgesv    ld-2.28.so              [.] _start
+
+
+#
+# (Tip: To show context switches in perf report sample context add --switch-events to perf record.)
+#

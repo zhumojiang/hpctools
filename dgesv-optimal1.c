@@ -44,8 +44,7 @@ int my_dgesv(int n, int nrhs, double *restrict a, double *restrict b) {
         }
     }
 
-    
-    #pragma omp parallel for private(i, k) schedule(dynamic) shared(a, b, n, nrhs, error_flag)
+#pragma omp parallel for private(i, k) shared(error_flag)
     for (j = 0; j < nrhs; j++) {
         for (i = n - 1; i >= 0; i--) {
             double t = b[i * nrhs + j];
